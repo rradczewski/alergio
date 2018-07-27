@@ -1,0 +1,35 @@
+.allergies {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.allergy:nth-child(0) {
+  margin-right: 0;
+}
+
+.allergy {
+  text-align: center;
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 5px 5px;
+  width: calc(50% - 30px);
+  box-shadow: #aaa 0px 3px 3px;
+}
+
+.allergyIcon {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.translations {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.translations .primaryLanguage {
+  font-weight: bold;
+  font-size: 1.2em;
+}
