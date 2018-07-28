@@ -38,7 +38,7 @@ class App extends Component {
           languages={this.state.languages}
         />
         <div className="footer">
-          <p>Daisy Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+          <p>Daisy Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a></p>
           <p>
             Tangerine-Regular.ttf: Copyright (c) 2010 by Toshi Omagari. All rights reserved.<br/>
             Tangerine-Bold.ttf: Copyright (c) 2010 by Toshi Omagari. All rights reserved.
