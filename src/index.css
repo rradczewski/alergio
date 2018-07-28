@@ -12,3 +12,8 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}

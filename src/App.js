@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import { Allergies } from "./Allergies";
 import { Settings } from "./Settings.js";
 
+import { classNameForLanguage } from "./data_language_direction";
+
 import logo from "./daisy.svg";
 import settings from "./settings.svg";
 
@@ -50,14 +52,21 @@ class App extends Component {
         ) : (
           <div>
             <div className="introText">
-              <p className="primaryLanguage">
+              <p
+                className={`primaryLanguage ${classNameForLanguage(
+                  this.state.languages[0]
+                )}`}
+              >
                 {IntroText[this.state.languages[0]]}{" "}
                 <span className="language-code">
                   ({this.state.languages[0]})
                 </span>
               </p>
               {this.state.languages.slice(1).map(language => (
-                <p key={language} className="otherLanguage">
+                <p
+                  key={language}
+                  className={`otherLanguage ${classNameForLanguage(language)}`}
+                >
                   {IntroText[language]}{" "}
                   <span className="language-code">({language})</span>
                 </p>
@@ -124,8 +133,8 @@ class App extends Component {
             SOFTWARE.
           </p>
           <p>
-            We provide no guarantees about the accuracy of the translations. This
-            app does not provide medical advice but is for informational
+            We provide no guarantees about the accuracy of the translations.
+            This app does not provide medical advice but is for informational
             purposes only.
           </p>
           <p>
