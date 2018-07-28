@@ -29,6 +29,9 @@
 
 .settings .button-primary-language {
   float: right;
+  box-shadow: none;
+  margin: 0;
+  font-size: 0.9em;
   margin-top: -5px;
   padding: 5px;
 }
