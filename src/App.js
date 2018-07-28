@@ -124,6 +124,11 @@ class App extends Component {
             SOFTWARE.
           </p>
           <p>
+            We provide no guarantees about the accuracy of the translations. This
+            app does not provide medical advice but is for informational
+            purposes only.
+          </p>
+          <p>
             <strong>Privacy statement</strong>: We are not storing any of your
             information. Our hosting is done via netlify, you can read their DPA{" "}
             <a href="https://www.netlify.com/gdpr/">here</a>.
