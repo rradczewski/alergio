@@ -66,7 +66,7 @@ export class Settings extends React.Component {
                   value={allergy}
                 />
                 <label htmlFor={`allergy_${allergy}`}>
-                  <img src={AllergiesDb[allergy].icon} />
+                  <img alt={`Icon for ${allergy}`} src={AllergiesDb[allergy].icon} />
                   {AllergiesDb[allergy].translations.en}
                 </label>
               </li>
