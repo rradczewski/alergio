@@ -62,13 +62,14 @@ button {
   margin: 0; padding: 3px;
   box-shadow: none;
   height: 29px;
+  max-width: 100%;
   position: absolute;
   right: 10px;
   top: 8px;
 }
 
 #settings img {
-  height: 20px;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -78,7 +79,7 @@ button {
 }
 
 .introText .otherLanguage {
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: #444;
 }
 
@@ -90,6 +91,27 @@ button {
 
 .footer {
   margin: 30px 25px 0 25px;
-  font-size: 0.45em;
+  font-size: 0.5em;
   color: #888;
+}
+
+@media (min-width: 600px) {
+  .content {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .TopBar #settings {
+    position: absolute;
+    height: 48px;
+    right: calc(50% - 280px);
+  }
+
+  .TopBar {
+    height: 64px;
+  }
+
+  .TopBar h1 {
+    font-size: 48px;
+  }
 }
