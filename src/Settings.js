@@ -88,6 +88,13 @@ export class Settings extends React.Component {
             ))}
           </ul>
         </div>
+        <div className="box">
+          Want to add a language or an allergene? Alergio is free software under
+          MIT license. You can add a language{" "}
+          <a href="https://github.com/rradczewski/alergio">
+            here via Pull Request
+          </a>.
+        </div>
         <button className="secondary" onClick={hideSettings}>
           Cancel
         </button>&nbsp;
