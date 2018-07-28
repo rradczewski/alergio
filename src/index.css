@@ -7,3 +7,8 @@ body {
 a, a:active, a:hover, a:visited {
   color: inherit;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
