@@ -12,15 +12,31 @@
 .allergy {
   text-align: center;
   display: inline-block;
+  min-height: 130px;
+  outline: 1px solid #efefef;
+  box-sizing: border-box;
   margin: 10px 5px;
   padding: 5px 5px;
   width: calc(50% - 30px);
-  box-shadow: #aaa 0px 3px 3px;
+  box-shadow: #bbb 0px 4px 3px;
 }
 
 .allergyIcon {
   margin: 0 auto;
-  max-width: 50%;
+  height: 50px;
+}
+
+.allergyIconCredit {
+  color: #888;
+  font-size: 0.2em;
+  font-weight: lighter;
+}
+
+.allergyIconCredit a,
+.allergyIconCredit a:visited,
+.allergyIconCredit a:active,
+.allergyIconCredit a:hover {
+  color: #888;
 }
 
 .translations {
@@ -31,5 +47,15 @@
 
 .translations .primaryLanguage {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+.translations .otherLanguage {
+  font-size: 0.85em;
+}
+
+.translations .language-code {
+  color: #aaa;
+  font-weight: lighter;
+  font-size: 0.8em;
 }

@@ -3,3 +3,52 @@
   width: 100vw;
   max-width: 100vw;
 }
+
+.TopBar {
+  height: 42px;
+  box-shadow: #aaa 0px 3px 10px;
+  margin-bottom: 20px;
+}
+
+.TopBar h1 {
+  color: #555;
+  font-family: "Tangerine", serif;
+  font-weight: 700;
+  margin: 8px 0;
+  padding: 0;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.TopBar #logo {
+  height: 60%;
+  vertical-align: text-bottom;
+  padding: 0 5px;
+}
+
+.introText {
+  font-family: serif;
+  margin: 0 25px;
+  text-align: left;
+}
+
+.introText .primaryLanguage {
+  font-size: 1.1em;
+}
+
+.introText .otherLanguage {
+  font-size: 0.7em;
+  color: #444;
+}
+
+.introText .language-code {
+  color: #aaa;
+  font-weight: lighter;
+  font-size: 0.7em;
+}
+
+.footer {
+  margin: 0 25px;
+  font-size: 0.4em;
+  color: #888;
+}
