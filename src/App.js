@@ -49,7 +49,7 @@ class App extends Component {
             hideSettings={this.hideSettings}
             updateSettings={this.updateSettings}
           />
-        ) : (
+        ) : this.state.allergies.length > 0 ? (
           <div>
             <div className="introText">
               <p
@@ -77,8 +77,27 @@ class App extends Component {
               languages={this.state.languages}
             />
           </div>
+        ) : (
+          <div className="box landing">
+            <p>
+              Welcome to <strong>alergio</strong>, a simple way to share your
+              food allergies and dietary requirements with chefs and waiters, no
+              matter what language.
+            </p>
+            <p>
+              To get started, simply pick your allergies and choose the
+              languages you want to see. Don{"'"}t worry, your data is neither
+              stored nor transmitted to our servers.
+            </p>
+            <p>
+              This app is also offline-enabled! Simply open the settings and
+              click "Add to home screen" and <strong>alergio</strong> will work
+              just like a native app!
+            </p>
+            <p style={{textAlign: 'center'}}><button className="btn btn-primary" onClick={this.showSettings}>Get Started</button></p>
+          </div>
         )}
-        <div className="footer">
+        <div className="box footer">
           <p>
             Settings Icon made by{" "}
             <a

@@ -10,6 +10,16 @@
   margin-bottom: 20px;
 }
 
+.box {
+  text-align: left;
+  margin: 0 25px;
+}
+
+.landing {
+  font-family: serif;
+  font-size: 1.3em;
+}
+
 .TopBar h1 {
   position: relative;
   color: #555;
@@ -35,14 +45,23 @@
 
 button {
   border: 1px solid #eee;
+  box-shadow: #ccc 0px 3px 3px;
   border-radius: 3px;
   background: white;
-  padding: 2px;
-  margin: 0;
-  height: 26px;
+  color: #555;
+  padding: 10px;
+  margin: 10px 5px;
+  font-size: 1.2em;
+}
+
+.btn-primary {
+  font-weight: bold;
 }
 
 #settings {
+  margin: 0; padding: 3px;
+  box-shadow: none;
+  height: 29px;
   position: absolute;
   right: 10px;
   top: 8px;
@@ -70,7 +89,7 @@ button {
 }
 
 .footer {
-  margin: 0 25px;
-  font-size: 0.4em;
+  margin: 30px 25px 0 25px;
+  font-size: 0.45em;
   color: #888;
 }

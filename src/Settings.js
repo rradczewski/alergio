@@ -94,10 +94,10 @@ export class Settings extends React.Component {
                   {language}
                   <button
                     onClick={() => this.setPrimary(language)}
-                    className={`button-primary ${
+                    className={`button-primary-language ${
                       this.state.languages[0] === language
-                        ? "button-primary-active"
-                        : "button-primary-inactive"
+                        ? "button-primary-language-active"
+                        : ""
                     }`}
                   >
                     Primary
@@ -114,11 +114,11 @@ export class Settings extends React.Component {
             here via Pull Request
           </a>.
         </div>
-        <button className="secondary" onClick={hideSettings}>
+        <button onClick={hideSettings}>
           Cancel
         </button>&nbsp;
         <button
-          className="primary"
+          className="btn-primary"
           onClick={() => updateSettings({ allergies, languages })}
         >
           Save Settings
