@@ -16,6 +16,12 @@ export class Settings extends React.Component {
     };
   }
 
+  setPrimary = language => {
+    this.setState({
+      languages: [language, ...this.state.languages.filter(a => a !== language)]
+    });
+  };
+
   toggleAllergy = (allergy, checked) => {
     if (checked) {
       this.setState({ allergies: [...this.state.allergies, allergy] });
@@ -60,6 +66,7 @@ export class Settings extends React.Component {
                   value={allergy}
                 />
                 <label htmlFor={`allergy_${allergy}`}>
+                  <img src={AllergiesDb[allergy].icon} />
                   {AllergiesDb[allergy].translations.en}
                 </label>
               </li>
@@ -83,7 +90,19 @@ export class Settings extends React.Component {
                   }
                   value={language}
                 />
-                <label htmlFor={`language_${language}`}>{language}</label>
+                <label htmlFor={`language_${language}`}>
+                  {language}
+                  <button
+                    onClick={() => this.setPrimary(language)}
+                    className={`button-primary ${
+                      this.state.languages[0] === language
+                        ? "button-primary-active"
+                        : "button-primary-inactive"
+                    }`}
+                  >
+                    Primary
+                  </button>
+                </label>
               </li>
             ))}
           </ul>
