@@ -6,7 +6,8 @@ export default {
       es: "leche",
       fr: "lait",
       ar: "حليب",
-      zh: "牛奶"
+      zh: "牛奶",
+      it: "latte"
     },
     icon_credit:
       'Icons made by <a href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -19,7 +20,8 @@ export default {
       es: "avena",
       fr: "avoine",
       ar: "شعر بالتعب",
-      zh: "燕麦"
+      zh: "燕麦",
+      it: "avena"
     },
     icon_credit:
       'Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -32,7 +34,8 @@ export default {
       es: "huevo de gallina",
       fr: "œuf de poule",
       ar: "بيض الدجاجه",
-      zh: "鸡蛋"
+      zh: "鸡蛋",
+      it: "uovo di gallina"
     },
     icon_credit:
       'Icons made by <a href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -45,7 +48,8 @@ export default {
       es: "girasol",
       fr: "tournesol",
       ar: "دوار الشمس",
-      zh: "向日葵"
+      zh: "向日葵",
+      it: "girasole"
     },
     icon_credit:
       'Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -58,7 +62,8 @@ export default {
       es: "cebada",
       fr: "orge",
       ar: "شعير",
-      zh: "大麦"
+      zh: "大麦",
+      it: "orzo"
     },
     icon_credit:
       'Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -71,7 +76,8 @@ export default {
       es: "pimiento",
       fr: "poivron",
       ar: "الفلفل",
-      zh: "灯笼椒"
+      zh: "灯笼椒",
+      it: "peperone"
     },
     icon_credit:
       'Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -84,7 +90,8 @@ export default {
       es: "apio",
       fr: "céleri",
       ar: "كرفس",
-      zh: "芹菜"
+      zh: "芹菜",
+      it: "sedano"
     },
     icon_credit:
       'Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -97,7 +104,8 @@ export default {
       es: "ajo",
       fr: "ail",
       ar: "ثوم",
-      zh: "大蒜"
+      zh: "大蒜",
+      it: "aglio"
     },
     icon_credit:
       'Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -110,7 +118,8 @@ export default {
       es: "trigo / gluten",
       fr: "blé / gluten",
       ar: "الغلوتين والقمح",
-      zh: "面筋和小麦"
+      zh: "面筋和小麦",
+      it: "frumento / glutine"
     },
     icon_credit:
       'Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -123,7 +132,8 @@ export default {
       es: "pistacho",
       fr: "pistache",
       ar: "فستق",
-      zh: "开心果"
+      zh: "开心果",
+      it: "pistacchio"
     },
     icon_credit:
       'Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>',
@@ -137,7 +147,8 @@ export default {
       es: "anacardo",
       fr: "anacardier",
       ar: "كاشيو نوع من الجوز",
-      zh: "腰果"
+      zh: "腰果",
+      it: "anacardo"
     },
     icon_credit:
       '<a href="http://www.freepik.com">Designed by katemangostar / Freepik</a>',
@@ -151,7 +162,8 @@ export default {
       es: "almendra",
       fr: "amande",
       ar: "لوز",
-      zh: "杏仁"
+      zh: "杏仁",
+      it: "mandorla"
     },
     icon_credit:
       '<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>',
@@ -165,7 +177,8 @@ export default {
       es: "kiwi",
       fr: "kiwi",
       ar: "كيوي",
-      zh: "奇异果"
+      zh: "奇异果",
+      it: "kiwi"
     },
     icon_credit:
       '<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>',

@@ -10,5 +10,7 @@ export default {
   zh:
     "你好！ 我有以下严重的过敏症，如果你能告诉我可以安全食用的食物，我将不胜感激。",
   es:
-    "¡Hola! Tengo las siguientes alergias graves, y le agradecería que me contara acerca de los alimentos que puedo comer con seguridad."
+    "¡Hola! Tengo las siguientes alergias graves, y le agradecería que me contara acerca de los alimentos que puedo comer con seguridad.",
+  it:
+    "Salve! Ho le seguenti gravi allergie e le sarei grato se mi mostrasse che cosa posso mangiare in sicurezza."
 };
