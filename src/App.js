@@ -11,6 +11,7 @@ import IntroText from "./data_intro";
 
 import logo from "./daisy.svg";
 import settings from "./settings.svg";
+import share from "./share.svg";
 import cancel from "./cancel.svg";
 
 import "./App.css";
@@ -21,6 +22,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      showSharePopup: false,
       allergies: store.get("allergies") || [],
       languages: store.get("languages") || ["en"]
     };
@@ -31,6 +33,21 @@ class App extends Component {
     store.set("languages", languages);
     this.setState({ allergies, languages, showSettings: false });
   };
+
+  shareLink = () => {
+    if (typeof window.navigator.share === "function") {
+      window.navigator.share({
+        title: "Alergio.app",
+        text: "Share your allergies with the world",
+        url: "https://developer.mozilla.org"
+      });
+    } else {
+      this.showSharePopup();
+    }
+  };
+
+  showSharePopup = () => this.setState({ showSharePopup: true });
+  hideSharePopup = () => this.setState({ showSharePopup: false });
 
   render() {
     return (
@@ -43,6 +60,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <div>
+                <button onClick={this.shareLink} id="share-button">
+                  <img alt="share" src={share} />
+                </button>
                 <Link to="/settings">
                   <button id="settings-button">
                     <img alt="settings" src={settings} />
