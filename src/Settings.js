@@ -49,31 +49,6 @@ export class Settings extends React.Component {
     return (
       <div className="settings">
         <div className="box">
-          <h2>Allergies</h2>
-          <ul>
-            {availableAllergies.map(allergy => (
-              <li key={allergy}>
-                <input
-                  type="checkbox"
-                  checked={
-                    this.state.allergies.includes(allergy) ? "checked" : ""
-                  }
-                  id={`allergy_${allergy}`}
-                  name="allergy"
-                  onChange={e =>
-                    this.toggleAllergy(e.target.value, e.target.checked)
-                  }
-                  value={allergy}
-                />
-                <label htmlFor={`allergy_${allergy}`}>
-                  <img alt={`Icon for ${allergy}`} src={AllergiesDb[allergy].icon} />
-                  {AllergiesDb[allergy].translations.en}
-                </label>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="box">
           <h2>Languages</h2>
           <ul>
             {availableLanguages.map(language => (
@@ -108,15 +83,41 @@ export class Settings extends React.Component {
           </ul>
         </div>
         <div className="box">
+          <h2>Allergies</h2>
+          <ul>
+            {availableAllergies.map(allergy => (
+              <li key={allergy}>
+                <input
+                  type="checkbox"
+                  checked={
+                    this.state.allergies.includes(allergy) ? "checked" : ""
+                  }
+                  id={`allergy_${allergy}`}
+                  name="allergy"
+                  onChange={e =>
+                    this.toggleAllergy(e.target.value, e.target.checked)
+                  }
+                  value={allergy}
+                />
+                <label htmlFor={`allergy_${allergy}`}>
+                  <img
+                    alt={`Icon for ${allergy}`}
+                    src={AllergiesDb[allergy].icon}
+                  />
+                  {AllergiesDb[allergy].translations[this.state.languages[0]]}
+                </label>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="box">
           Want to add a language or an allergene? Alergio is free software under
           MIT license. You can add a language{" "}
           <a href="https://github.com/rradczewski/alergio">
             here via Pull Request
           </a>.
         </div>
-        <button onClick={hideSettings}>
-          Cancel
-        </button>&nbsp;
+        <button onClick={hideSettings}>Cancel</button>&nbsp;
         <button
           className="btn-primary"
           onClick={() => updateSettings({ allergies, languages })}

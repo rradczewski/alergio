@@ -24,7 +24,7 @@ const Allergy = ({ id, languages }) => {
             key={language}
             className={`otherLanguage ${classNameForLanguage(language)}`}
           >
-            {allergy.translations[language]}{" "}
+            {allergy.translations[language]}&nbsp;
             <span className="language-code">({language})</span>
           </li>
         ))}
