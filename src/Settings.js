@@ -7,6 +7,11 @@ const availableLanguages = Object.keys(
   AllergiesDb[availableAllergies[0]].translations
 );
 
+const withPreventDefault = f => e => {
+  e.withPreventDefault();
+  return f(e) || false;
+};
+
 export class Settings extends React.Component {
   constructor(props) {
     super(props);
@@ -60,15 +65,17 @@ export class Settings extends React.Component {
                   }
                   id={`language_${language}`}
                   name="language"
-                  onChange={e =>
+                  onChange={withPreventDefault(e =>
                     this.toggleLanguage(e.target.value, e.target.checked)
-                  }
+                  )}
                   value={language}
                 />
                 <label htmlFor={`language_${language}`}>
                   {language}
                   <button
-                    onClick={() => this.setPrimary(language)}
+                    onClick={withPreventDefault(() =>
+                      this.setPrimary(language)
+                    )}
                     className={`button-primary-language ${
                       this.state.languages[0] === language
                         ? "button-primary-language-active"
