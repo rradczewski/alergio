@@ -41,8 +41,10 @@ export class Settings extends React.Component {
     if (checked) {
       this.setState({ languages: [...this.state.languages, language] });
     } else {
+      const newLanguages = this.state.languages.filter(a => a !== language);
+      if (newLanguages.length === 0) newLanguages.push("en");
       this.setState({
-        languages: this.state.languages.filter(a => a !== language)
+        languages: newLanguages
       });
     }
   };
