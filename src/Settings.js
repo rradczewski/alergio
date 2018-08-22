@@ -1,6 +1,7 @@
 import React from "react";
 import AllergiesDb from "./data_allergies";
 import "./Settings.css";
+import { withRouter } from "react-router";
 
 const availableAllergies = Object.keys(AllergiesDb);
 const availableLanguages = Object.keys(
@@ -8,11 +9,11 @@ const availableLanguages = Object.keys(
 );
 
 const withPreventDefault = f => e => {
-  e.withPreventDefault();
+  e.preventDefault();
   return f(e) || false;
 };
 
-export class Settings extends React.Component {
+class SettingsPanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,7 +40,12 @@ export class Settings extends React.Component {
 
   toggleLanguage = (language, checked) => {
     if (checked) {
-      this.setState({ languages: [...this.state.languages, language] });
+      this.setState({
+        languages: [
+          ...this.state.languages.filter(a => a !== language),
+          language
+        ]
+      });
     } else {
       const newLanguages = this.state.languages.filter(a => a !== language);
       if (newLanguages.length === 0) newLanguages.push("en");
@@ -49,10 +55,19 @@ export class Settings extends React.Component {
     }
   };
 
-  render() {
+  saveAndExit = () => {
     const { allergies, languages } = this.state;
-    const { updateSettings, hideSettings } = this.props;
+    const { updateSettings } = this.props;
 
+    updateSettings({ allergies, languages });
+    this.props.history.push("/");
+  };
+
+  cancel = () => {
+    this.props.history.push("/");
+  };
+
+  render() {
     return (
       <div className="settings">
         <div className="box">
@@ -67,9 +82,9 @@ export class Settings extends React.Component {
                   }
                   id={`language_${language}`}
                   name="language"
-                  onChange={withPreventDefault(e =>
+                  onChange={e =>
                     this.toggleLanguage(e.target.value, e.target.checked)
-                  )}
+                  }
                   value={language}
                 />
                 <label htmlFor={`language_${language}`}>
@@ -126,14 +141,13 @@ export class Settings extends React.Component {
             here via Pull Request
           </a>.
         </div>
-        <button onClick={hideSettings}>Cancel</button>&nbsp;
-        <button
-          className="btn-primary"
-          onClick={() => updateSettings({ allergies, languages })}
-        >
+        <button onClick={this.cancel}>Cancel</button>&nbsp;
+        <button className="btn-primary" onClick={this.saveAndExit}>
           Save Settings
         </button>
       </div>
     );
   }
 }
+
+export const Settings = withRouter(SettingsPanel);
