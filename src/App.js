@@ -36,8 +36,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="TopBar">
-          <img alt="Logo for Alergio, a daisy flower" src={logo} id="logo" />
-          <h1>Alergio</h1>
+          <Link to="/">
+            <img alt="Logo for Alergio, a daisy flower" src={logo} id="logo" />
+            <h1>Alergio</h1>
+          </Link>
           <Switch>
             <Route exact path="/">
               <div>
