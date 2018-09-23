@@ -146,7 +146,7 @@ export default {
       en: "cashew",
       es: "anacardo",
       fr: "anacardier",
-      ar: "كاشيو نوع من الجوز",
+      ar: "كاجو",
       zh: "腰果",
       it: "anacardo"
     },
