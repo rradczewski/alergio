@@ -2,6 +2,7 @@ export default {
   milk: {
     translations: {
       de: "Milch",
+      el: "Γάλα",
       en: "milk",
       es: "leche",
       fr: "lait",
@@ -16,6 +17,7 @@ export default {
   oat: {
     translations: {
       de: "Hafer",
+      el: "βρώμη",
       en: "oat",
       es: "avena",
       fr: "avoine",
@@ -30,6 +32,7 @@ export default {
   chicken_egg: {
     translations: {
       de: "Hühnerei",
+      el: "αυγό κότας",
       en: "chicken egg",
       es: "huevo de gallina",
       fr: "œuf de poule",
@@ -44,7 +47,8 @@ export default {
   sunflower: {
     translations: {
       de: "Sonnenblumen",
-      en: "sunflower",
+      el: "Ηλιοτρόπιο",
+      en: "sunflower", 
       es: "girasol",
       fr: "tournesol",
       ar: "دوار الشمس",
@@ -58,6 +62,7 @@ export default {
   barley: {
     translations: {
       de: "Gerste",
+      el: "κριθάρι",
       en: "barley",
       es: "cebada",
       fr: "orge",
@@ -72,6 +77,7 @@ export default {
   bell_pepper: {
     translations: {
       de: "Paprika",
+      el: "πιπεριά",
       en: "bell pepper",
       es: "pimiento",
       fr: "poivron",
@@ -86,6 +92,7 @@ export default {
   celery: {
     translations: {
       de: "Sellerie",
+      el: "σέλινο", 
       en: "celery",
       es: "apio",
       fr: "céleri",
@@ -100,7 +107,8 @@ export default {
   garlic: {
     translations: {
       de: "Knoblauch",
-      en: "garlic",
+      el: "σκόρδο",
+      en: "garlic", 
       es: "ajo",
       fr: "ail",
       ar: "ثوم",
@@ -114,6 +122,7 @@ export default {
   gluten: {
     translations: {
       de: "Weizen / Gluten",
+      el: "σιτάρι",
       en: "wheat / gluten",
       es: "trigo / gluten",
       fr: "blé / gluten",
@@ -128,6 +137,7 @@ export default {
   pistachio: {
     translations: {
       de: "Pistazie",
+      el: "φυστίκι αιγίνης",
       en: "pistachio",
       es: "pistacho",
       fr: "pistache",
@@ -143,6 +153,7 @@ export default {
   cashew: {
     translations: {
       de: "Cashew",
+      el: "κάσιους",
       en: "cashew",
       es: "anacardo",
       fr: "anacardier",
@@ -158,6 +169,7 @@ export default {
   almond: {
     translations: {
       de: "Mandel",
+      el: "αμύγδαλο",
       en: "almond",
       es: "almendra",
       fr: "amande",
@@ -173,6 +185,7 @@ export default {
   kiwi: {
     translations: {
       de: "Kiwi",
+      el: "ακτινίδια",
       en: "kiwi",
       es: "kiwi",
       fr: "kiwi",
@@ -188,6 +201,7 @@ export default {
   chili: {
     translations: {
       de: "Chili",
+      el: "κοκκινοπίπερο",
       en: "chili",
       es: "chile",
       fr: "piment",
