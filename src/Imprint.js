@@ -21,7 +21,7 @@ export const Imprint = () => (
     </p>
     <p>
       Share Icon made by{" "}
-      <a
+      <a 
         href="https://www.flaticon.com/authors/gregor-cresnar"
         title="Gregor Cresnar"
       >
@@ -36,6 +36,7 @@ export const Imprint = () => (
         href="http://creativecommons.org/licenses/by/3.0/"
         title="Creative Commons BY 3.0"
         target="_blank"
+        rel="noopener noreferrer" 
       >
         CC 3.0 BY
       </a>
@@ -71,6 +72,7 @@ export const Imprint = () => (
         href="http://creativecommons.org/licenses/by/3.0/"
         title="Creative Commons BY 3.0"
         target="_blank"
+        rel="noopener noreferrer"
       >
         CC 3.0 BY
       </a>
