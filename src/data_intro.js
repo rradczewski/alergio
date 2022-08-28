@@ -1,6 +1,7 @@
 export default {
   de:
     "Hallo! Ich habe die folgenden schweren Allergien und würde mich sehr freuen, wenn Sie mir das Essen zeigen könnten, das ich gefahrlos essen kann.",
+  el: "Γειά σου! Έχω τις ακόλουθες σοβαρές αλλεργίες και θα εκτιμούσα αν μου δείχνατε ποια τροφή μπορώ να φάω με ασφάλεια.",
   en:
     "Hello! I have the following severe allergies and would appreciate if you would show me what food I can safely eat.",
   ar:
